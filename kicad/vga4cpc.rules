@@ -1,0 +1,91 @@
+
+(rules PCB vga4cpc
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 12)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.5)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.0)
+    (clear 125.0 (type smd_to_turn_gap))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    +3.3V "/Connectors/VGA_R" "/Connectors/VGA_G" "/Connectors/VGA_B" "unconnected-(J1-Pad4)" "unconnected-(J1-Pad9)" "unconnected-(J1-Pad11)" "unconnected-(J1-Pad12)"
+    "/Connectors/VGA_HSYNC" "/Connectors/VGA_VSYNC" "unconnected-(J1-Pad15)" "/Comparators/CPC_R" "/Comparators/CPC_G" "/Comparators/CPC_B" "/Connectors/CPC_CSYNC" CSYNC
+    "unconnected-(SW1-A-Pad1)" "Net-(SW2-A)" /Comparators/B0 /Comparators/B1 /Comparators/G0 /Comparators/G1 /Comparators/R0 /Comparators/R1
+    "INT_VSYNC" "unconnected-(U1-GPIO27_ADC1-Pad32)" "unconnected-(U1-AGND-Pad33)" "unconnected-(U1-GPIO28_ADC2-Pad34)" "unconnected-(U1-ADC_VREF-Pad35)" "unconnected-(U1-3V3_EN-Pad37)" "unconnected-(U1-VBUS-Pad40)" "Net-(U1-GPIO15)"
+    "Net-(U1-GPIO17)" "Net-(U1-GPIO19)" "Net-(U1-GPIO14)" "Net-(U1-GPIO16)" "Net-(U1-GPIO18)" "unconnected-(U1-GPIO8-Pad11)" "unconnected-(U1-GPIO9-Pad12)" "unconnected-(U1-GPIO20-Pad26)"
+    "unconnected-(U1-GPIO21-Pad27)" /Comparators/200mV /Comparators/600mV "Net-(SW1-C)" +5V
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class GND
+    GND
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

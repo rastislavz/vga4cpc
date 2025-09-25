@@ -2493,16 +2493,6 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 101.6) (xy 212.09 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc99d946-f43a-4dfb-a130-a145c18a18ff")
-	)
-	(wire
-		(pts
 			(xy 194.31 80.01) (xy 194.31 81.28)
 		)
 		(stroke
@@ -2543,7 +2533,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 90.17) (xy 212.09 93.98)
+			(xy 212.09 90.17) (xy 212.09 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3403,7 +3393,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_Tactile_SKHH_Angled"
+		(property "Footprint" "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx31-2LFS"
 			(at 182.88 74.93 0)
 			(effects
 				(font
@@ -4053,7 +4043,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network03_Split")
-		(at 212.09 97.79 180)
+		(at 212.09 96.52 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4061,7 +4051,7 @@
 		(dnp no)
 		(uuid "8799e01b-03a4-49eb-bbb7-f92844d122dd")
 		(property "Reference" "RN1"
-			(at 204.724 96.266 0)
+			(at 204.724 94.996 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4070,7 +4060,7 @@
 			)
 		)
 		(property "Value" "47"
-			(at 206.502 99.314 0)
+			(at 206.502 98.044 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4079,7 +4069,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP4"
-			(at 214.122 97.79 90)
+			(at 214.122 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4088,7 +4078,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 212.09 97.79 0)
+			(at 212.09 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4097,7 +4087,7 @@
 			)
 		)
 		(property "Description" "3 resistor network, star topology, bussed resistors, split"
-			(at 212.09 97.79 0)
+			(at 212.09 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4323,7 +4313,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 212.09 107.95 0)
+		(at 212.09 100.33 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4333,7 +4323,7 @@
 		(fields_autoplaced yes)
 		(uuid "a98318ee-c5a1-451a-85b5-a606a67e385b")
 		(property "Reference" "#PWR01"
-			(at 212.09 114.3 0)
+			(at 212.09 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4342,7 +4332,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 212.09 113.03 0)
+			(at 212.09 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4350,7 +4340,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 212.09 107.95 0)
+			(at 212.09 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4359,7 +4349,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 212.09 107.95 0)
+			(at 212.09 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4368,7 +4358,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 212.09 107.95 0)
+			(at 212.09 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4938,7 +4928,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_Slide_SPDT_Angled_CK_OS102011MA1Q"
+		(property "Footprint" "Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled"
 			(at 175.26 69.85 0)
 			(effects
 				(font
